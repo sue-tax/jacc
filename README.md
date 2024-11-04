@@ -1,7 +1,9 @@
 # jacc
 
 jaccjob.java
+
  private JaccLexer lexerFromFile(String inputFile)
+
  Reader -> InputStreamReader
 
 
