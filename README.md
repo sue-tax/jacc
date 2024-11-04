@@ -1,4 +1,10 @@
 # jacc
+
+jaccjob.java
+ private JaccLexer lexerFromFile(String inputFile)
+ Reader -> InputStreamReader
+
+
 ![jacc logo](images/jacc.gif)
 
 Copyright Mark P Jones, Portland State University, 2004-2016.
