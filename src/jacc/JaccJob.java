@@ -65,7 +65,11 @@ public class JaccJob extends Phase {
      */
     private JaccLexer lexerFromFile(String inputFile) {
         try {
-            Reader    input = new FileReader(inputFile);
+//            Reader    input = new FileReader(inputFile);
+            File file = new File(inputFile);
+            InputStreamReader inputSR = new InputStreamReader(new FileInputStream(file), "UTF-8");
+            Reader input = (Reader)inputSR;
+
             JaccLexer lexer = new JaccLexer(getHandler(),
                                 new JavaSource(getHandler(), inputFile, input));
             lexer.nextToken(); // prime the token stream
